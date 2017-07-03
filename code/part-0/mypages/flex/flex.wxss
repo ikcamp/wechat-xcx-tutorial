@@ -1,0 +1,29 @@
+.section__title{
+  padding: 40rpx;
+}
+.flex-wrp{
+  display: flex;
+  flex-direction: row;
+}
+.flex-row{
+  flex-direction: row;
+}
+.flex-col{
+  flex-direction: column;
+}
+.flex-item{
+  color: #fff;
+  width: 200rpx;
+  height: 200rpx;
+  text-align: center;
+  line-height: 200rpx;
+}
+.bc_green{
+  background-color: #09ba07;
+}
+.bc_red{
+  background-color: #f76160;
+}
+.bc_blue{
+  background-color: #0faeff;
+}
