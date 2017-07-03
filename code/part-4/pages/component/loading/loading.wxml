@@ -1,0 +1,42 @@
+<template name="detailLoading">
+    <!--<view class="block header"></view>-->
+    <view class="content">
+        <view class="bar strong width-all mg-60"></view>
+        <view class="bar normal width-200 mg-135"></view>
+
+        <view class="block article-img width-all mg-40"></view>
+
+        <view class="bar normal width-all mg-36"></view>
+        <view class="bar normal width-all mg-36"></view>
+        <view class="bar normal width-300 mg-80"></view>
+
+        <view class="bar normal width-all mg-36"></view>
+        <view class="bar normal width-190"></view>
+    </view>
+</template>
+
+<template name="listLoading">
+    <view wx:for="{{ [0,1] }}" wx:key="*this" class="group">
+        <view class="group-bar">
+            <text class="bar normal width-140"></text>
+        </view>
+        <view>
+            <view wx:for="{{ [0,1,2,3] }}" wx:key="*this" class="group-item">
+                <view class="desc">
+                    <view class="bar normal width-340 mg-40"></view>
+                    <view class="bar normal width-140 mg-40"></view>
+                </view>
+                <view class="block cover"></view>
+            </view>
+        </view>
+    </view>
+</template>
+
+<view class="loading-wrap {{ isLoaded ? 'hide' : '' }} {{ loadingType }}">
+    <block wx:if="{{ loadingType === 'detailLoading' }}">
+        <template is="detailLoading"/>
+    </block>
+    <block wx:if="{{ loadingType === 'listLoading' }}">
+        <template is="listLoading"/>
+    </block>
+</view>
