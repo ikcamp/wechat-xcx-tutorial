@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4abb3b",
+    "navigationBarTitleText": "沪江英语学习",
+    "backgroundColor": "#f8f8f8",
+    "navigationBarTextStyle": "white"
+  },
+  "netWorkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
