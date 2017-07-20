@@ -1,3 +1,4 @@
+import util from './utils/index'
 let handler = {
   //小程序初始化
   onLaunch() {
