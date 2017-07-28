@@ -30,7 +30,6 @@ let handler = {
     util.request({
       url: 'list',
       mock: true,
-      // url: `${config.apiHost}/v1/article/tag/list`,
       data: {
         tag: '微信热门',
         start: this.data.page || 1,
