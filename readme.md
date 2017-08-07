@@ -40,23 +40,23 @@
 ## <a>&sect; 教程大纲</a> 
 -  第一章：小程序初级入门教程
    - [appID准备](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-1)
-   - [工具安装](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-2.md)
-   - [目录说明](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-3.md)
-   - [小试牛刀](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-4.md)
-   - [发布流程](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-5.md)
+   - [工具安装](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-2)
+   - [目录说明](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-3)
+   - [小试牛刀](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-4)
+   - [发布流程](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-5)
 - 第二章：小程序中级实战教程：预备篇
-   - [项目结构设计](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch2-1.md)
-   - [提取 util 公用方法](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch2-2.md) 
-   - [封装网络请求及 mock 数据](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch2-3.md) 
+   - [项目结构设计](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch2-1)
+   - [提取 util 公用方法](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch2-2) 
+   - [封装网络请求及 mock 数据](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch2-3) 
 - 第三章：小程序中级实战教程：列表篇
-   - [列表-静态页面制作](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-1.md)
-   - [列表-页面逻辑处理](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-2.md)
-   - [列表-视图与数据关联](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-3.md)
-   - [列表-阅读标识](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-4.md)
+   - [列表-静态页面制作](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-1)
+   - [列表-页面逻辑处理](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-2)
+   - [列表-视图与数据关联](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-3)
+   - [列表-阅读标识](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-4)
 - 第四章：小程序中级实战教程：详情篇
-   - [详情-页面制作](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-1.md)
-   - [详情-视图渲染](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-2.md)
-   - [详情-功能完善](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-3.md)
+   - [详情-页面制作](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-1)
+   - [详情-视图渲染](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-2)
+   - [详情-功能完善](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-3)
 
 
 <br>
@@ -85,6 +85,10 @@ git checkout ch3-1
 
 <br>
 
+## <a>&sect; 教程完整代码</a>  
+> 教程的完整代码在分支 `完整代码` 中，请自行查阅
+
+<br>
 
 ## <a>&sect; 课后作业</a>
 > 整个教程学习过后，可以切换到 `教程作业` 分支，并完成作业，目录下有相应的作业答案。 
