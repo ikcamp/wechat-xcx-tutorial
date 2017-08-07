@@ -1,3 +1,8 @@
+# 第一章：小程序初级入门教程——工具安装  
+
+<br>
+
+
 ## <a>&sect; 小程序开发工具安装</a>
 在上一节第 8 步所展示的页面中，可以点击 `开发者工具` 直接进入到下载页面，也可以直接访问 [官网下载地址](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html)。然后根据自己的设备选择相应的下载  
 安装过程不再复述，一路默认。  
@@ -44,10 +49,3 @@
 <div align="center">
   <img src="./images/WechatIMG17.jpeg" width="600">
 </div>
-<br>  
-
-<a href="../readme.md">返回大纲</a>  
-
-<a href="./ch1-1.md">上一篇：获取小程序appID</a>
-
-<a href="./ch1-3.md">下一篇：小程序结构目录说明</a>
