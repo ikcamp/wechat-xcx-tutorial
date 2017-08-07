@@ -1,0 +1,280 @@
+## <a>&sect; 项目结构设计</a>  
+> 开始前请把 `/codes/ch2-1` 导入微信开发工具  
+
+<br>
+
+前面的章节中，我们完成了小程序的准备工作，熟悉了小程序的基本配置。接下来的章节，我们就要着手开始一个真正的项目。有没有很激动？其实不难发现，小程序的门槛还是相对比较低的，基本掌握前端开发基础的同学，完成一个简单的小程序不费吹灰之力。  
+
+<br>  
+
+### Step 1. 基本结构  
+经过前面几章的学习，我们已经基本知道了小程序的基本配置，不啰嗦，先把基础的项目结构建立起来，先搭架子，在丰富细节。在 `/codes/ch2-1` 的基础上，我们创建以下文件：
+
+```
+├── lib/
+├── styles/ 
+│     ├── base.wxss 
+├── pages/
+├── app.js
+├── app.json
+├── app.wxss
+```  
+
+<br>  
+
+现在呢，最最基本的框架就已经搭建好了。`app.js` 是小程序的主逻辑文件，`app.json` 是小程序全局配置文件，`app.wxss` 当然就是小程序的全局样式文件了。`pages` 后面会用来存放小程序的页面。
+
+- app.js 
+```js
+let handler = {
+    //小程序初始化
+    onLaunch () {
+        console.log('app init...');
+    },
+    //小程序全局数据
+    globalData: {
+        user: {
+            name: '',
+            avator: ''
+        }
+    }
+};
+App(handler);
+```  
+
+<br>  
+
+`app.js` 包含了小程序的一些生命周期函数，项目刚开始，我们先从简单的开始，只用到了 `onLaunch` 生命周期函数。当小程序初始化完成时，会触发  onLaunch（全局只触发一次）。`globalData` 可以用来存放小程序的全局数据，我们可以在页面中通过 `getApp()` 方法获取到小程序的实例，通过小程序实例就可以访问到这个全局对象，后面会详细讲解。  
+
+<br>  
+
+- app.json
+```json
+{
+  "pages": [],
+   "window": {
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "Demo",
+        "backgroundColor": "#f8f8f8",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": false
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    },
+    "debug": true
+}
+```  
+
+<br>  
+
+小程序的主配置文件的基本结构就已经写好了。当然不是全部的配置文件，可以参考[小程序配置API](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/config.html)。官方文档已经给出了很详细的解释，这里就不赘述了。  
+
+**Tip：**`debug` 为 `true`，可以在调试的时候会有些许帮助，但是提审的时候建议改为 `false`。  
+
+<br>  
+
+
+- app.wxss
+```css
+.green{
+    color: #26b961;
+}
+page{
+    height: 100%;
+    background-color: #f8f8f8;
+}
+```  
+
+<br>  
+
+定义在 `app.wxss` 中的样式为全局样式，作用于每一个页面。在 `page` 的 `wxss` 文件中定义的样式为局部样式，只作用在对应的页面，并会覆盖 `app.wxss` 中相同的选择器。
+
+
+### Step 2. 增加页面
+接下来我们要为小程序增加页面了，小程序的页面存放在 `pages` 文件夹下面。我们继续完善目录结构
+
+```
+├── lib/
+├── styles/ 
+│     ├── base.wxss 
+├── pages/
+│     ├── detail/ 
+│     ├── index/
+├── app.js
+├── app.json
+├── app.wxss
+```  
+
+<br>  
+
+首先我们在 `pages` 目录下增加两个文件夹，`detail` 和 `index`,其中 `detail` 代表小程序的文章详情页面，`index` 则代表小程序的首页。  
+
+光有文件夹不行，在小程序中，每个页面都有四个文件
+- [name].js   页面的主逻辑文件
+- [name].json 页面的配置文件
+- [name].wxml 页面内容，类似于之前的html文件
+- [name].wxss 页面的样式文件，类似之前的css文件
+
+
+**Tip：** 值得注意的是，每个页面中的这四个文件必须保持同名。  
+
+
+继续完善文件目录
+
+```
+├── lib/
+├── styles/ 
+│     ├── base.wxss 
+├── pages/
+│     ├── detail/
+│     │     ├── detail.js  
+│     │     ├── detail.json        
+│     │     ├── detail.wxml      
+│     │     ├── detail.wxss  
+│     ├── index/
+│           ├── index.js  
+│           ├── index.json  
+│           ├── index.wxml      
+│           ├── index.wxss   
+├── app.js
+├── app.json
+├── app.wxss
+```  
+
+<br>
+
+- index.js
+
+和之前的 `app.js` 类似，小程序的页面也有对应的逻辑文件，比如 `index.js` 就代表该项目中的首页的逻辑（小程序的首页不一定非要是 `index`，可以用其他名字）。
+```js
+Page({
+  data: {
+    text: "This is page data."
+  },
+  onLoad: function(options) {
+    console.log('小程序加载了')  
+    // 生命周期函数--监听页面加载
+  },
+  onReady: function() {
+    // 生命周期函数--监听页面初次渲染完成
+  },
+  onShow: function() {
+    // 生命周期函数--监听页面显示
+  },
+  onReachBottom: function() {
+    // 页面上拉触底事件的处理函数
+  },
+  // 其他一些业务函数
+  hello: function() {
+    this.setData({
+      text: 'hello world'
+    })
+  }
+})
+```  
+
+<br>
+
+`Page()` 函数用来注册一个页面。接受一个 `object` 参数，其指定页面的初始数据、生命周期函数、事件处理函数等。
+
+- index.json
+
+每一个小程序页面也可以使用 `.json` 文件来对本页面的窗口表现进行配置。页面的配置比 `app.json` 全局配置简单得多，只是设置 `app.json` 中的 `window` 配置项的内容，页面中配置项会覆盖 `app.json` 的 `window` 中相同的配置项。
+
+页面的 `.json` 只能设置 `window` 相关的配置项，以决定本页面的窗口表现，所以无需写 `window` 这个键。因为本项目比较简单，可以先使用全局的配置。暂时可以放一个空的 `json` 对象
+```json
+{ }
+```
+
+<br>  
+
+- index.wxml
+
+`.wxml` 就是小程序的页面文件了，WXML（WeiXin Markup Language）是框架设计的一套标签语言，结合基础组件、事件系统，可以构建出页面的结构。
+
+```html
+<view class="home"> this is home page </view>
+```
+
+<br>  
+
+- index.wxss
+
+WXSS(WeiXin Style Sheets)是一套样式语言，用于描述 `WXML` 的组件样式。这里的样式基本和之前 `css` 的语法一致，可以覆盖 `app.wxss` 中定义的样式。  
+```css
+.home {
+    color: red;
+    font-size: 28rpx;
+}
+```  
+
+<br>  
+
+同样的 `detail` 页面也会拥有类似的结构和代码。
+
+完成了上面的基本的页面，仔细的同学可能还发现，上面的 `app.json` 配置中，`pages` 还是空的，接下来补充配置。
+```json
+ "pages": [
+    "pages/index/index",
+    "pages/detail/detail"
+ ]
+```  
+
+<br>  
+
+`pages` 就是小程序的路由配置，这里可以看到，小程序拥有两个路由，一个首页，一个详情页面。
+
+至此我们就完成了最简单的页面的配置，到现在为止，我们就能很容易的跑出一个简单的微信小程序了，虽然还只是最基本的骨架，后面会继续完善。
+
+### Step 3. 一些非必要目录
+上面介绍了小程序的必要的项目结构，其实在实际的项目中，为了开发方便，我们一般还会增加一些额外的目录，比如：
+```
+├── lib/
+├── styles/ 
+│     ├── base.wxss 
+├── pages/
+│     ├── detail/
+│     │     ├── detail.js  
+│     │     ├── detail.json        
+│     │     ├── detail.wxml      
+│     │     ├── detail.wxss  
+│     ├── index/
+│           ├── index.js  
+│           ├── index.json  
+│           ├── index.wxml      
+│           ├── index.wxss  
+├── app.js
+├── app.json
+├── app.wxss
+```  
+
+<br>  
+
+
+`lib` 文件夹和 `styles` 文件夹。文件夹不是小程序的必要配置，前者用来存放项目中用到的其他库，后者可以存放一些基础样式文件。当然，你也可以根据自己的需要来增加一些别的文件夹来便利开发。  
+
+这里我们放置了一些文件，lib 中放置了实现 `Promise` 的库和解析 `html` 为小程序 `WXML` 的库。styles 中放置了公用的重置样式。  
+
+<br>  
+
+下一节中，我们讲一下这个实战项目中用到的一些公用方法，比如打印日志功能、网络请求环境等  
+
+
+<a href="../readme.md">返回大纲</a>  
+
+<a href="./ch1-5.md">上一篇：发布流程</a>
+
+<a href="./ch2-2.md">下一篇：提取 util 公用方法</a>
+
+
+
+
+
+
+
+
