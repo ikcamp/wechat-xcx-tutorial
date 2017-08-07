@@ -1,0 +1,10 @@
+page{
+  height: 100%;
+}
+.item{
+  background-color:#f6f8f9;
+  color:#9a9a9a;
+  font-size:14px;
+  padding: 10px 20px;
+  margin-bottom:15px;
+}

@@ -1,0 +1,91 @@
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ellipsis-multi-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.ellipsis-line-2 {
+    -webkit-line-clamp: 2;
+}
+
+.ellipsis-line-3 {
+    -webkit-line-clamp: 3;
+}
+
+.ellipsis-line-4 {
+    -webkit-line-clamp: 4;
+}
+
+.ellipsis-line-5 {
+    -webkit-line-clamp: 5;
+}
+
+.triangle::after {
+    content: '';
+    display: inline-block;
+    width: 12rpx;
+    height: .8em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 12rpx;
+    vertical-align: -1rpx;
+}
+
+.triangle-green::after {
+    content: '';
+    background-image: url(http://n1image.hjfile.cn/shetuan/475e1ab1-0fb9-4e1b-89ce-df08345d449e.png);
+}
+
+.triangle-white::after {
+    content: '';
+    background-image: url(http://n1image.hjfile.cn/shetuan/f060c04b-c543-4547-891f-c31d218a100a.png);
+}
+
+.triangle-gray::after {
+    content: '';
+    background-image: url(http://7xsw2u.com1.z0.glb.clouddn.com/arrow-right_small.jpg);
+}
+
+.gradient-btn {
+    background-image: linear-gradient(107deg, #9ae64e, #21c197);
+}
+
+.cf:before, .cf:after {
+    content: '';
+    zoom: 1;
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
