@@ -86,12 +86,12 @@ git checkout ch3-1
 <br>
 
 ## <a>&sect; 教程完整代码</a>  
-> 教程的完整代码在分支 `完整代码` 中，请自行查阅
+> 教程的完整代码在分支 `完整代码` 中，请自行[查阅](https://github.com/ikcamp/wechat-xcx-tutorial/tree/%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81)
 
 <br>
 
 ## <a>&sect; 课后作业</a>
-> 整个教程学习过后，可以切换到 `教程作业` 分支，并完成作业，目录下有相应的作业答案。 
+> 整个教程学习过后，可以切换到 `教程作业` 分支，并完成作业，目录下有相应的作业答案，请自行完成[练习](https://github.com/ikcamp/wechat-xcx-tutorial/tree/%E6%95%99%E7%A8%8B%E4%BD%9C%E4%B8%9A)。 
 
 <br>
 
