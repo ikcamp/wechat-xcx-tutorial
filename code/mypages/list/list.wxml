@@ -1,0 +1,12 @@
+<view class="container">
+  <block wx:for="{{arrList}}" wx:key="">
+    <view class="item">
+      <text>{{item}}</text>
+    </view>
+  </block>
+  <block wx:if="{{arrList.length==0}}">
+    <view class="item">
+      <text>下拉加载数据</text>
+    </view>
+  </block>
+</view>
