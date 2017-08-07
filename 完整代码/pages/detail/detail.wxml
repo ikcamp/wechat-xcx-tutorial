@@ -1,0 +1,29 @@
+<import src="../../lib/wxParse/wxParse.wxml"/>
+
+ <scroll-view scroll-y="true" scroll-top="{{ scrollTop }}" enable-back-to-top="true" class="root-wrap">
+    <view class="wrapper">
+      <view class="info">
+          <view class="info-title">{{ detailData.title }}</view>
+          <view class="info-desc cf">
+              <text class="info-desc-author fl">{{ detailData.author }}</text>
+              <text class="info-desc-date fr">{{ detailData.formateUpdateTime}}</text>
+          </view>
+          <view class="info-line under-line"></view>
+      </view>
+      <!-- 增加正文视图位置  -->
+      <view class="content">
+          <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+      </view>
+      <view class="footbar">
+        <form>
+          <button class="footbar-back clearBtnDefault" bindtap="back">
+            <view class="icon footbar-back-icon"></view>
+          </button>
+          <button class="footbar-btn clearBtnDefault" bindtap="next">下一篇</button>
+          <button class="footbar-share clearBtnDefault" bindtap="share" open-type="share">
+            <view class="icon footbar-share-icon"></view>
+          </button>
+        </form>
+      </view>
+    </view>
+  </scroll-view> 
