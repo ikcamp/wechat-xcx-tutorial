@@ -1,0 +1,31 @@
+<loading hidden="{{hiddenLoading}}">数据加载中</loading>
+<view class="wrapper">
+    <form bindsubmit="showDetail" data-item="{{ promotArticle }}" report-submit="true">
+        <button formType="submit" wx:if="{{ promotArticle }}" class="promote clearBtnDefault">
+            <view class="promote-img-mask"></view>
+            <view class="promote-title ellipsis-multi-line ellipsis-line-2">
+                <text class="promote-inline">今日</text>
+                <text>{{ promotArticle.title }}</text>
+            </view>
+            <image mode="aspectFill" class="promote-img" src="{{ promotArticle.cover || defaultImg.coverImg }}"></image>
+        </button>
+    </form>
+    <!--repeat-->
+    <view wx:for="{{ articleList }}" wx:for-item="group" wx:key="{{ group.date }}" wx:if="{{ group && group.articles.length > 0 }}" class="group">
+        <view wx:if="{{ group.formateDate !== '今日' }}" class="group-bar">
+            <view class="group-title {{ group.formateDate === '今日' ? 'on' : ''}}">{{ group.formateDate }}</view>
+        </view>
+        <view class="group-content">
+            <!--repeat-->
+            <form bindsubmit="showDetail" wx:for="{{ group.articles }}" wx:for-item="item" wx:key="{{ item.contentId }}" class="group-content-item-wrap under-line" data-item="{{ item }}" report-submit="true">
+                <button class="group-content-item clearBtnDefault {{ item.hasVisited ? 'visited' : '' }}" formType="submit">
+                    <view class="group-content-item-desc ellipsis-multi-line ellipsis-line-2">{{ item.title }}</view>
+                    <view class="group-content-item-count">阅读量: {{ item.viewCount || 0 }}</view>
+                    <image mode="aspectFill" class="group-content-item-img" src="{{ item.cover || defaultImg.coverImg }}" ></image>
+                </button>
+            </form>
+        </view>
+    </view>
+
+    <view hidden="{{ hasMore }}" class="no-more">暂时没有更多内容</view>
+</view>
