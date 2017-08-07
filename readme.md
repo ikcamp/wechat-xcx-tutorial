@@ -39,41 +39,55 @@
 
 ## <a>&sect; 教程大纲</a> 
 -  第一章：小程序初级入门教程
-   - [appID准备](./ch1-1.md)
-   - [工具安装](./ch1-2.md)
-   - [目录说明](./ch1-3.md)
-   - [小试牛刀](./ch1-4.md)
-   - [发布流程](./ch1-5.md)
+   - [appID准备](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-1)
+   - [工具安装](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-2.md)
+   - [目录说明](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-3.md)
+   - [小试牛刀](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-4.md)
+   - [发布流程](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-5.md)
 - 第二章：小程序中级实战教程：预备篇
-   - [项目结构设计](./ch2-1.md)
-   - [提取 util 公用方法](./ch2-2.md) 
-   - [封装网络请求及 mock 数据](./ch2-3.md) 
+   - [项目结构设计](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch2-1.md)
+   - [提取 util 公用方法](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch2-2.md) 
+   - [封装网络请求及 mock 数据](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch2-3.md) 
 - 第三章：小程序中级实战教程：列表篇
-   - [列表-静态页面制作](./ch3-1.md)
-   - [列表-页面逻辑处理](./ch3-2.md)
-   - [列表-视图与数据关联](./ch3-3.md)
-   - [列表-阅读标识](./ch3-4.md)
+   - [列表-静态页面制作](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-1.md)
+   - [列表-页面逻辑处理](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-2.md)
+   - [列表-视图与数据关联](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-3.md)
+   - [列表-阅读标识](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-4.md)
 - 第四章：小程序中级实战教程：详情篇
-   - [详情-页面制作](./ch4-1.md)
-   - [详情-视图渲染](./ch4-2.md)
-   - [详情-功能完善](./ch4-3.md)
-- 第五章：小程序进阶教程
-   - [待定内容](./ch4-0.md)
+   - [详情-页面制作](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-1.md)
+   - [详情-视图渲染](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-2.md)
+   - [详情-功能完善](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-3.md)
 
 
 <br>
 
 
 ## <a>&sect; 学习方式</a>
-教程以章节的方式管理，比如学习第三章第一节 `列表-静态页面制作` 时候，需要把 `codes/ch3-1` 里面的代码取出来，导入到微信开发工具编辑器，然后跟随教程进行实战代码操作。  
-**注意：** `codes/` 目录下相对的章节内容，皆是上一节内容操作完成后的结果。比如 `codes/ch3-2` 就是上一节课程 `ch3-1` 的结果。  
+教程以 `git` 分支的方式管理，比如学习第三章第一节 `列表-静态页面制作` 时候，需要切换到 `ch3-1` 分支，然后把分支目录 `code/` 导入到微信开发工具编辑器，跟随教程进行实战代码操作。操作如下：
+
+1. 通过 `git` 把项目复制到本地
+```git
+git clone https://github.com/ikcamp/wechat-xcx-tutorial
+```
+
+2. 切换目录
+```
+cd wechat-xcx-tutorial
+```
+
+3. 在当前目录下切换分支
+```
+git checkout ch3-1
+```
+
+**注意：** 每一分支的 `code/` 内容，皆是上一节内容操作完成后的结果。比如 `ch3-2/code` 就是上一节课程 `ch3-1/code` 随教程操作后的结果。  
 
 
 <br>
 
 
 ## <a>&sect; 课后作业</a>
-> 教程整个章节学习完成后，可以打开 `codes/课后作业/作业` 作为练习，目录下有相应的作业答案。 
+> 整个教程学习过后，可以切换到 `教程作业` 分支，并完成作业，目录下有相应的作业答案。 
 
 <br>
 
