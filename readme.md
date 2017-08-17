@@ -57,6 +57,7 @@
    - [详情-页面制作](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-1)
    - [详情-视图渲染](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-2)
    - [详情-功能完善](https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-3)
+- 第五章：[课后作业练习](https://github.com/ikcamp/wechat-xcx-tutorial/tree/%E6%95%99%E7%A8%8B%E4%BD%9C%E4%B8%9A)  
 
 
 <br>
