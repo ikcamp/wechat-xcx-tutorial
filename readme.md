@@ -3,12 +3,14 @@
 <br>  
 
 ## <a>&sect; 封装网络请求及 mock 数据</a>  
+
 > 开始前请把 `ch2-3` 分支中的 `code/` 目录导入微信开发工具  
   
 
 <br>
 
 上一节中，我们对 index.js 文件中增加了 util 对象，并在对象中封装了很多公用方法
+
 ```js
 let util = {
   log(){……},
@@ -20,6 +22,7 @@ let util = {
 <br>
 
 本节中，我们对常用的网络请求方法 [wx.request](https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-request.html) 进行封装  
+
 ```js
   let util = {
     // 此处省略部分代码
@@ -53,7 +56,8 @@ let util = {
 ```  
 <br>
 
-对于请求的参数，我们设置下默认值，方便调用
+对于请求的参数，我们设置下默认值，方便调用  
+
 ```js
   const DEFAULT_REQUEST_OPTIONS = {
     url: '',
@@ -77,7 +81,8 @@ let util = {
 ```  
 <br>
 
-如果是本地开发调试，需要增加我们的 mock 假数据，对 util.request 进行修改
+如果是本地开发调试，需要增加我们的 mock 假数据，对 util.request 进行修改  
+
 ```js
   let util = {
     // 此处省略部分代码
@@ -128,7 +133,8 @@ let util = {
 
 <br>  
 
-调用方法如下：
+调用方法如下：  
+
 ```js
   util.request({
     url: 'list',
