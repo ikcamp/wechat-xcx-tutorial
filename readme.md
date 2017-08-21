@@ -19,6 +19,7 @@
 
 ### <a>Step 1. &nbsp; config.js 配置常量</a>
 该文件存放了一些 const 常量（如开发环境，默认文案，默认图片等），将这些常量存在 core 这个对象中，最后通过 `export default core` 将 core 这个对象导出。由于只是存放一些配置常量，此处不再复述：
+
 ```js
   'use strict';
   const env = 'dev';// dev production
@@ -64,6 +65,7 @@
 
 ### <a>Step 2. &nbsp; mock.js 数据</a>
 该文件用来存放一些假数据，方便本地开发调试，如果你有 mock 服务器，当然更好
+
 ```js
   const list = {
     data: [
@@ -210,6 +212,7 @@
 <br>  
 
 首先，我们把配置信息 `config.js` 和假数据 `mock.js` 引进来，并正常导出  
+
 ```js
   'use strict'
   import Promise from '../lib/promise'
@@ -224,6 +227,7 @@
 <br>  
 
 第二行代码：
+
 ```js
   import Promise from '../lib/promise'
 ```  
@@ -233,8 +237,10 @@
 <br>  
 
 下面我们开始对 util 对象进行公用方法扩展封装：
-增加 log 控制台调试功能
+增加 log 控制台调试功能  
+
 > 如果环境配置为dev环境，则打印参数内容 
+
 ```
 let util = {
   isDEV: config.isDev,
@@ -246,8 +252,10 @@ let util = {
 
 <br>  
 
-封装 alert 弹出窗口
+封装 alert 弹出窗口 
+
 > 由于开发环境中，经常需要查看一些对象信息，所以增加了 object 类型解析  
+
 ```js
 let util = {
   // 此处省略部分代码
@@ -267,9 +275,11 @@ let util = {
 wx.showModal 是微信官方提供的 api 方法，具体用法可 [查阅文档](https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html#wxshowmodalobject)  
 <br>  
 
-封装本地缓存数据的读取功能
+封装本地缓存数据的读取功能 
+
 > [wx.getStorage 文档地址](https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxgetstorageobject)  
 > [wx.setStorage 文档地址](https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxsetstorageobject)
+
 ```js
 let util = {
   // 此处省略部分代码
@@ -304,4 +314,4 @@ let util = {
 
 <br>  
 
-下一篇中，我们会把网络请求封装起来，并增加本地 `mock` 功能
+下一篇中，我们会把网络请求封装起来，并增加本地 `mock` 功能  
