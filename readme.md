@@ -325,5 +325,5 @@ page{
  
 如果之前有 `appID`，也可以在手机端预览
 <div align="center">
-  <img width="600" src="./images/WechatIMG24.jpeg"/>
+  <img width="800" src="./images/WechatIMG24.jpeg"/>
 </div>  
