@@ -32,7 +32,6 @@
 
 <div align="center">
   <img src="./images/WechatIMG13.jpeg" width="280">
-  <img src="./images/WechatIMG14.jpeg" width="280">
   <img src="./images/WechatIMG15.jpeg" width="280">
 </div>  
 <br>  
@@ -47,5 +46,5 @@
 4. 添加成功后，我们的项目会在 `微信web开发者工具` 中自动打开并启动，可以在此工具中对代码进行修改、调试、断点、预览，文件有修改的话，项目会实时更新。 
 
 <div align="center">
-  <img src="./images/WechatIMG17.jpeg" width="600">
+  <img src="./images/WechatIMG17.jpeg" width="800">
 </div>
