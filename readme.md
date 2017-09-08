@@ -288,10 +288,10 @@ Page({
 `for` 循环指令包裹的范围内，子元素默认是 `item`，如果想重新定义它的名字，可以在 `wx:for="{{arrList}}"` 后面增加 `wx:for-item="item"`，同样的，也可以指定数组下标 `wx:for-index="index"`  
 <br>  
 
-我们对页面样式做简单的优化，由于当页面高度不够时候，难以操作触发 `onReachBottom`，故我们给当前的页面外层标签 `page` 加一个 `100%` 高度：
+我们对页面样式做简单的优化，由于当页面高度不够时候，难以操作触发 `onReachBottom`，故我们给当前的页面外层标签 `page` 加一个 `150%` 高度：
 ```css
 page{
-  height: 100%;
+  height: 150%;
 }
 .item{
   background-color:#f6f8f9;
