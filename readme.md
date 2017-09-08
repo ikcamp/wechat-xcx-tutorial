@@ -246,7 +246,7 @@ Page({
   onReachBottom(){
     console.log('到达页面底部运行此函数')
     this.updateArrList();
-  }，
+  },
   updateArrList(){
     let arr = this.data.arrList
     arr.push( ...this.createData() )
