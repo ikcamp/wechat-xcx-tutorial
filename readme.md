@@ -23,6 +23,23 @@
 这里，我们先制作出：头部和尾部。中间的内容部分，会由 `parse.js` 解析文章数据生成。  
 <br>  
 
+开始之前，我们先修改 `app.wxss` 文件，引入需要用到的公用样式表和第三方样式 
+
+```css
+@import "./styles/base.wxss";
+@import "./lib/wxParse/wxParse.wxss";
+
+.green{
+    color: #26b961;
+}
+page{
+    height: 100%;
+    background-color: #f8f8f8;
+}
+```
+
+<br>
+
 ### Step 1. 页面准备  
 1. 由于文章需要上下滚动，我们采用 `scroll-view` 组件来包括整个页面内容  
 ```html
