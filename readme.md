@@ -159,3 +159,9 @@ git checkout ch3-1
      </tr>
   </tbody>
 </table>
+
+<br/>
+
+## &sect; 讨论活动区 
+
+QQ群：661407609  [小程序线下活动行](http://www.huodongxing.com/event/5409924174200)
