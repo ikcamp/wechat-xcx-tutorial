@@ -40,53 +40,53 @@
 ## <a>&sect; 教程大纲</a> 
 -  第一章：小程序初级入门教程
    - appID准备
-    - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-1
-    - 文章视频：https://camp.qianduan.group/xcx/1/1/1
+      - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-1
+      - 文章视频：https://camp.qianduan.group/xcx/1/1/1
    - 工具安装
-    - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-2
-    - 文章视频：https://camp.qianduan.group/xcx/1/1/2
+      - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-2
+      - 文章视频：https://camp.qianduan.group/xcx/1/1/2
    - 目录说明
-    - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-3
-    - 文章视频：https://camp.qianduan.group/xcx/1/1/3
+      - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-3
+      - 文章视频：https://camp.qianduan.group/xcx/1/1/3
    - 小试牛刀
-    - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-4
-    - 文章视频：https://camp.qianduan.group/xcx/1/1/4
+      - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-4
+      - 文章视频：https://camp.qianduan.group/xcx/1/1/4
    - 发布流程
-    - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-5
-    - 文章视频：https://camp.qianduan.group/xcx/1/1/5
+      - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-5
+      - 文章视频：https://camp.qianduan.group/xcx/1/1/5
 - 第二章：小程序中级实战教程：预备篇
    - 项目结构设计
-    - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch2-1
-    - 文章视频：https://camp.qianduan.group/xcx/1/2/1
+      - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch2-1
+      - 文章视频：https://camp.qianduan.group/xcx/1/2/1
    - 提取 util 公用方法
-    - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch2-2
-    - 文章视频：https://camp.qianduan.group/xcx/1/2/2
+      - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch2-2
+      - 文章视频：https://camp.qianduan.group/xcx/1/2/2
    - 封装网络请求及 mock 数据
-    - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch2-3
-    - 文章视频：https://camp.qianduan.group/xcx/1/2/3
+      - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch2-3
+      - 文章视频：https://camp.qianduan.group/xcx/1/2/3
 - 第三章：小程序中级实战教程：列表篇
    - 列表-静态页面制作
-    - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-1
-    - 文章视频：https://camp.qianduan.group/xcx/1/3/1
+      - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-1
+      - 文章视频：https://camp.qianduan.group/xcx/1/3/1
    - 列表-页面逻辑处理
-    - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-2
-    - 文章视频：https://camp.qianduan.group/xcx/1/3/2
+      - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-2
+      - 文章视频：https://camp.qianduan.group/xcx/1/3/2
    - 列表-视图与数据关联
-    - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-3
-    - 文章视频：https://camp.qianduan.group/xcx/1/3/3
+      - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-3
+      - 文章视频：https://camp.qianduan.group/xcx/1/3/3
    - 列表-阅读标识
-    - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-4
-    - 文章视频：https://camp.qianduan.group/xcx/1/3/4
+      - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch3-4
+      - 文章视频：https://camp.qianduan.group/xcx/1/3/4
 - 第四章：小程序中级实战教程：详情篇
    - 详情-页面制作
-    - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-1
-    - 文章视频：https://camp.qianduan.group/xcx/1/4/1
+      - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-1
+      - 文章视频：https://camp.qianduan.group/xcx/1/4/1
    - 详情-视图渲染
-    - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-2
-    - 文章视频：https://camp.qianduan.group/xcx/1/4/2
+      - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-2
+      - 文章视频：https://camp.qianduan.group/xcx/1/4/2
    - 详情-功能完善
-    - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-3
-    - 文章视频：https://camp.qianduan.group/xcx/1/4/3
+      - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-3
+      - 文章视频：https://camp.qianduan.group/xcx/1/4/3
 - 第五章：课后作业练习
  - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/%E6%95%99%E7%A8%8B%E4%BD%9C%E4%B8%9A
 
