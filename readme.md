@@ -88,7 +88,7 @@
       - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch4-3
       - 文章视频：https://camp.qianduan.group/xcx/1/4/3
 - 第五章：课后作业练习
- - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/%E6%95%99%E7%A8%8B%E4%BD%9C%E4%B8%9A
+   - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/%E6%95%99%E7%A8%8B%E4%BD%9C%E4%B8%9A
 
 
 <br>
