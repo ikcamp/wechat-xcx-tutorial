@@ -150,9 +150,7 @@ git checkout ch3-1
       </td>
       <td align="center" valign="top">
         <img width="85" height="85" src="https://github.com/tinyuen.png?s=85">
-        <br>
-        <a href="https://github.com/tinyuen">tinyuen</a>
-        <p></p>
+        <br><a href="https://github.com/tinyuen">小虎</a><p></p>
         <p></p>
       </td>
       <td align="center" valign="top">
