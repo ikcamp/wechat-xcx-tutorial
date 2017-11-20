@@ -133,9 +133,7 @@ git checkout ch3-1
     <tr>
       <td align="center" valign="top">
         <img width="85" height="85" src="https://github.com/aximario.png?s=85">
-        <br>
-        <a href="https://github.com/aximario">阿希</a>
-        <p></p>
+        <br><a href="https://github.com/aximario">阿希</a><p></p>
         <p></p>
       </td>
       <td align="center" valign="top">
@@ -147,9 +145,7 @@ git checkout ch3-1
       </td>
       <td align="center" valign="top">
         <img width="85" height="85" src="https://github.com/pangz1.png?s=85">
-        <br>
-        <a href="https://github.com/pangz1">胖子</a>
-        <p></p>
+        <br><a href="https://github.com/pangz1">胖子</a><p></p>
         <p></p>
       </td>
       <td align="center" valign="top">
@@ -161,16 +157,12 @@ git checkout ch3-1
       </td>
       <td align="center" valign="top">
         <img width="85" height="85" src="https://github.com/roeis.png?s=85">
-        <br>
-        <a href="https://github.com/roeis">周周</a>
-        <p></p>
+        <br><a href="https://github.com/roeis">周周</a><p></p>
         <p></p>
       </td>
       <td align="center" valign="top">
         <img width="85" height="85" src="https://github.com/sqzhuyi.png?s=85">
-        <br>
-        <a href="https://github.com/sqzhuyi">朱乙</a>
-        <p></p>
+        <br><a href="https://github.com/sqzhuyi">朱乙</a><p></p>
         <p></p>
       </td>
       <td align="center" valign="top">
