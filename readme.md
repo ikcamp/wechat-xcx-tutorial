@@ -173,7 +173,7 @@ git checkout ch3-1
       <td align="center" valign="top">
         <img width="85" height="85" src="https://github.com/brucecham.png?s=85">
         <br>
-        <a href="https://github.com/brucecham">brucecham</a>
+        <a href="https://github.com/brucecham">张利涛</a>
         <p></p>
         <p></p>
       </td>
