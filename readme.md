@@ -2,7 +2,7 @@
 
 <br>  
 
-## <a>&sect; 阅读要求</a>
+## &sect; 阅读要求
 > 读者需要具备但不限于以下技能
 - HTML
 - JavaScript `es6更佳`
@@ -13,31 +13,40 @@
 
 <br>
 
-## <a>&sect; 目标导向</a>
+## &sect; 目标导向
 > 本教程以实战项目驱动，以沪江英语微信小程序项目框架为基础，最终还原一个完整的小程序
 
 列表页面：请求接口，并展示列表页面数据
 <div align="center">
-  <img src="./images/list.png" width="320">
+  <img srcset="./images/list-320w.png,
+    ./images/list-640w.png 2x,
+    ./images/list.png 2.5x"
+    src="./images/list.png" width="320">
  </div>  
  
 <br>  
 
 详情页面：以文章id为参数，获取文章详情 
 <div align="center">
-  <img src="./images/detail.png" width="320">
+  <img srcset="./images/detail-320w.png,
+    ./images/detail-640w.png 2x,
+    ./images/detail.png 2.5x"
+    src="./images/detail.png" width="320">
  </div>  
  
 <br>  
 
 详情页面，点击图片，展示大图
 <div align="center">
-  <img src="./images/showimg.png" width="320">
+  <img srcset="./images/showimg-320w.png,
+    ./images/showimg-640w.png 2x,
+    ./images/showimg.png 2.5x"
+    src="./images/showimg.png" width="320">
 </div>
 
 <br>  
 
-## <a>&sect; 教程大纲</a> 
+## &sect; 教程大纲
 -  第一章：小程序初级入门教程
    - appID准备
       - GitHub：https://github.com/ikcamp/wechat-xcx-tutorial/tree/ch1-1
@@ -94,7 +103,7 @@
 <br>
 
 
-## <a>&sect; 学习方式</a>
+## &sect; 学习方式
 教程以 `git` 分支的方式管理，比如学习第三章第一节 `列表-静态页面制作` 时候，需要切换到 `ch3-1` 分支，然后把分支目录 `code/` 导入到微信开发工具编辑器，跟随教程进行实战代码操作。操作如下：
 
 1. 通过 `git` 把项目复制到本地
@@ -117,17 +126,17 @@ git checkout ch3-1
 
 <br>
 
-## <a>&sect; 教程完整代码</a>  
+## &sect; 教程完整代码
 > 教程的完整代码在分支 `完整代码` 中，请自行[查阅](https://github.com/ikcamp/wechat-xcx-tutorial/tree/%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81)
 
 <br>
 
-## <a>&sect; 课后作业</a>
+## &sect; 课后作业
 > 整个教程学习过后，可以切换到 `教程作业` 分支，并完成作业，目录下有相应的作业答案，请自行完成[练习](https://github.com/ikcamp/wechat-xcx-tutorial/tree/%E6%95%99%E7%A8%8B%E4%BD%9C%E4%B8%9A)。 
 
 <br>
 
-## <a>&sect; 核心人员</a> 
+## &sect; 核心人员
 <table>
   <tbody>
     <tr>
@@ -173,7 +182,7 @@ git checkout ch3-1
       <td align="center" valign="top">
         <img width="85" height="85" src="https://github.com/brucecham.png?s=85">
         <br>
-        <a href="https://github.com/brucecham">张利涛</a>
+        <a href="https://github.com/brucecham">张利涛</a>
         <p></p>
         <p></p>
       </td>
